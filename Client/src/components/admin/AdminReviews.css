@@ -1,0 +1,11 @@
+img{width: 5%;
+height: auto;}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    width: 100%;
+}

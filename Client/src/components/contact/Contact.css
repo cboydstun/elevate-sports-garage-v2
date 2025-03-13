@@ -1,0 +1,125 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #000 30%, #111 70%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Contact Heading */
+.contact-container h1 {
+  font-size: 2rem;
+  color: #51eb14;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #51eb14;
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #444;
+  border-radius: 6px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus */
+form input:focus {
+  border-color: #51eb14;
+  box-shadow: 0 0 10px rgba(81, 235, 20, 0.5);
+}
+
+/* Submit Button */
+form button {
+  background-color: #51eb14;
+  color: #000;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #a0f50c;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+
+  form input {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}

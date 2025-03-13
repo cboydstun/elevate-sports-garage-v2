@@ -1,0 +1,86 @@
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  color: rgb(3, 12, 3);
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+}
+
+.link {
+  background: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+
+.sidebar ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  display: flex;
+  gap: 1rem;
+}
+
+.sidebar ul li:hover {
+  background-color: rgb(246, 247, 250);
+  border-radius: 10px;
+  padding: 7px;
+  transition: 0.5s;
+}
+
+.hamburger {
+  /* display: none; */
+  color: #0c0c0c;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: fixed;
+}
+
+.sidebar {
+  background-color: rgb(71, 223, 11);
+  position: fixed;
+  right: -250px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  color: black;
+  transition: right 0.3s ease;
+  z-index: 1000; /* Ensure the sidebar is on top of other elements */
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  .close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
